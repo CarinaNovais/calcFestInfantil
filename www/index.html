@@ -5,25 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+ <script src="components/script.js"></script>
+
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+
 
   <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+ 
   <link rel="stylesheet" href="css/style.css">
 
-  <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
-
-    if (ons.platform.isIPhoneX()) {
-      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
-      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
-    }
-  </script>
 </head>
 <body>
-  This is a template for Onsen UI app.
+  <h1 class="titulo">Calculadora de Festa</h1>
+  <div class="container jumbotron">
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <p>Quantidade de Pessoas: </p>
+          <input type="number" class="form-control display bg-light" id="display">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-dark btn-block" id="igual">=</button>
+      </div>
+    </div>
+
+<!-- Segunda Parte -->
+
+  <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <label>Refrigerante: </label>
+          <input type="text" class="form-control display bg-light" readonly id="display1">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <p>Água: </p>
+          <input type="text" class="form-control display bg-light" readonly id="display2">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <p>Bolo: </p>
+          <input type="text" class="form-control display bg-light" readonly id="display3">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <p>Doce: </p>
+          <input type="text" class="form-control display bg-light" readonly id="display4">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <p>Salgadinhos: </p>
+          <input type="text" class="form-control display bg-light" readonly id="display5">
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

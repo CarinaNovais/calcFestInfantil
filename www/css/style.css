@@ -1,2 +1,10 @@
 /**/
+ button {
+   margin-bottom: 10px;
+ }
 
+ .titulo{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-size: 35px;
+ }
